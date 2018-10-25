@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="./js/index.js"></script>
+</head>
+<body>
+    <div class="form">
+        
+        <img src="./img/bg_right.svg" alt="">
+
+        <div class="form__left">
+
+            <div class="form__left-logo">
+                <img src="./img/logo.png" alt="">
+            </div>
+            <div class="form__left-describe">
+                <p>Get how-to help and instructions or specific features in </p>
+            </div>
+            <div class="form__left-buttons">
+                <a href="#"><div class="buttons-support">help center</div></a>
+                <span>or</span>
+                <a href="#"><div class="buttons-support">support</div></a>
+            </div>
+
+        </div>
+        <div class="form__right">
+            <div class="slider">
+                <div class="slider__content">
+                    <div class="slider__item">
+                        <form action="submit" method="post" validate>
+                            <h1 class="h1">Welcome back</h1>
+                            <p>Sign in to continue to IO Technologies.</p>
+                            <input name="email" type="email" placeholder="Your email" required>
+                            <input name="password" type="password" placeholder="Password" required minlength="8">
+                            <a href="#"><div class="buttons-login"><span>log in </span><span class="arrow-right">→</span></div></a>
+                            <p>Forgor your password? <a class="link" href="#" onclick="shift()">Reset</a></p> 
+                        </form>
+                    </div>
+                    <div class="slider__item">
+                        <form action="submit" method="post" validate>
+                            <a href="#" onclick="shift()"><img class="return-img" src="./img/right-arrow.png" alt="return"></a>
+                            
+                            <h1 class="h1">Forgot password?</h1>
+                            <input name="email" type="email"  placeholder="Enter your email" required>
+                            <a href="#"><div class="buttons-login"><span>send me instructions</span></div></a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
