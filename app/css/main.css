@@ -92,7 +92,7 @@ a {
         .form__right .slider__item p {
           font-size: 2.2rem;
           font-weight: 400;
-          margin: 10px 0;
+          margin: 10px 0 20px 0;
           color: #616983; }
         .form__right .slider__item input {
           width: 100%;
@@ -102,25 +102,26 @@ a {
           font-size: 2.5rem;
           font-weight: 500;
           padding: 2.5rem 0;
-          margin-bottom: 65px;
+          margin-bottom: 6.5rem;
           color: #616983 !important; }
           .form__right .slider__item input:focus {
             outline: 0;
             border-bottom: 2px solid #00b68e; }
+          .form__right .slider__item input::placeholder {
+            color: #616983; }
 
 .buttons-support {
   box-sizing: border-box;
   width: 244px;
-  height: 72px;
   border-radius: 6px;
   box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.16);
   background: #7d93d3;
   outline: 0;
   color: white;
   text-transform: uppercase;
-  font-size: 24px;
+  font-size: 1.9rem;
   text-align: center;
-  padding: 20px; }
+  padding: 2rem; }
   .buttons-support:hover {
     background: #687ab0;
     transition: 0.5s; }
@@ -131,14 +132,13 @@ a {
   text-align: center;
   box-sizing: border-box;
   width: 100%;
-  padding: 30px;
+  padding: 2.5rem;
   background-image: linear-gradient(to right, #127ef9 22%, #54c3fe 78%);
   border-radius: 7px;
   color: white;
-  font-size: 26px;
+  font-size: 2.6rem;
   font-weight: 700;
-  height: 95px;
-  margin-bottom: 85px;
+  margin-bottom: 8.5rem;
   text-transform: uppercase;
   z-index: 1; }
   .buttons-login:after {
@@ -158,11 +158,12 @@ a {
   .buttons-login span {
     position: relative;
     z-index: 3; }
-  .buttons-login:hover.arrow-right {
+  .buttons-login:hover .arrow-right {
     transform: translateX(10px);
     transition: 1s; }
 
 .arrow-right {
+  margin-left: 10px;
   width: 30px;
   height: 22px; }
 
@@ -180,10 +181,12 @@ a {
 
 .return-img {
   transform: rotate(180deg);
-  margin-bottom: 10px; }
+  margin-bottom: 3rem; }
 
 @media (min-width: 1921px) {
   .form__left-describe {
+    font-size: 3.6rem; }
+  .form__left-buttons {
     font-size: 3.6rem; }
   .form__right .slider__item .h1 {
     font-size: 5.4rem;
@@ -194,4 +197,116 @@ a {
   .form__right .slider__item input {
     font-size: 3.5rem;
     font-weight: 500;
-    padding: 3.6rem 0; } }
+    padding: 2.5rem 0; }
+  .buttons-support {
+    font-size: 2.4rem;
+    padding: 2rem; }
+  .buttons-login {
+    font-size: 2.6rem;
+    padding: 3rem; } }
+
+@media (max-width: 1440px) {
+  .form__left-describe {
+    font-size: 1.6rem; }
+  .form__left-buttons {
+    font-size: 1.6rem; }
+  .form__right .slider__item .h1 {
+    font-size: 3.4rem;
+    font-weight: 500; }
+  .form__right .slider__item p {
+    font-size: 1.2rem;
+    font-weight: 400; }
+  .form__right .slider__item input {
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 1.6rem 0; }
+  .buttons-support {
+    width: 180px;
+    font-size: 1.9rem;
+    padding: 1.4rem; }
+  .buttons-login {
+    font-size: 2.1rem;
+    padding: 2rem;
+    margin-bottom: 6rem; } }
+
+@media (max-width: 1024px) {
+  .form {
+    overflow: hidden; }
+    .form > img {
+      position: absolute;
+      right: -10%;
+      z-index: 10;
+      height: 100vh;
+      overflow: hidden; }
+    .form__left-describe {
+      font-size: 1.6rem; }
+    .form__left-buttons {
+      font-size: 1.6rem; }
+    .form__right .slider__item .h1 {
+      font-size: 3.4rem;
+      font-weight: 500; }
+    .form__right .slider__item p {
+      font-size: 1.2rem;
+      font-weight: 400; }
+    .form__right .slider__item input {
+      font-size: 1.5rem;
+      font-weight: 500;
+      padding: 1.6rem 0; }
+  .buttons-support {
+    width: 150px;
+    font-size: 1.4rem;
+    padding: 1.4rem; }
+  .buttons-login {
+    font-size: 1.6rem;
+    padding: 2rem;
+    margin-bottom: 4rem; } }
+
+@media (max-width: 768px) {
+  .form {
+    overflow: hidden;
+    flex-direction: column; }
+    .form > img {
+      display: none; }
+    .form__left {
+      flex: 1 1 40%;
+      text-align: center;
+      width: 80%;
+      margin: 0 auto; }
+      .form__left-logo {
+        margin-bottom: 10px; }
+        .form__left-logo > img {
+          width: 250px;
+          height: 38px; }
+      .form__left-describe {
+        font-size: 1.6rem; }
+      .form__left-buttons {
+        font-size: 1.6rem; }
+    .form__right {
+      flex: 1 1 100%; }
+      .form__right .slider {
+        width: 60%;
+        height: 100%; }
+        .form__right .slider__item .h1 {
+          color: black;
+          font-size: 3.4rem;
+          font-weight: 500; }
+        .form__right .slider__item p {
+          color: black;
+          font-size: 1.2rem;
+          font-weight: 400; }
+        .form__right .slider__item input {
+          color: black !important;
+          font-size: 1.5rem;
+          font-weight: 500;
+          padding: 1.6rem 0;
+          border-bottom: 2px solid black; }
+          .form__right .slider__item input::placeholder {
+            color: black; }
+  .buttons-support {
+    width: 100px;
+    font-size: 1rem;
+    padding: 1rem; }
+  .buttons-login {
+    font-size: 1.6rem;
+    padding: 2rem;
+    margin-bottom: 4rem; } }

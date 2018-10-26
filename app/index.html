@@ -35,9 +35,9 @@
                         <form action="submit" method="post" validate>
                             <h1 class="h1">Welcome back</h1>
                             <p>Sign in to continue to IO Technologies.</p>
-                            <input name="email" type="email" placeholder="Your email" required>
+                            <input name="email" type="email" placeholder="Your email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="Invalid email input" required>
                             <input name="password" type="password" placeholder="Password" required minlength="8">
-                            <a href="#"><div class="buttons-login"><span>log in </span><span class="arrow-right">→</span></div></a>
+                            <a href="#"><div class="buttons-login"><span>log in </span><span><img class="arrow-right" src="./img/right-arrow.png" alt="return"></span></div></a>
                             <p>Forgor your password? <a class="link" href="#" onclick="shift()">Reset</a></p> 
                         </form>
                     </div>
